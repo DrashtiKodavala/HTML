@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <aside class="col-12 col-md-3 col-lg-2 sidebar p-0" id="sidebar">
+            <div class="logo">
+                <img src="images/menu-bar.svg" id="menuToggle" style="cursor:pointer;">
+                <img src="images/logo.svg" style="width:100px">
+            </div>
+
+            <div class="menu" id="menu">
+                <a href="#">
+                    <img src="images/dashboard-default.svg"> Dashboard
+                </a>
+                <a href="#" class="active">
+                    <img src="images/graph-active.svg"> Analysis
+                </a>
+                <a href="#">
+                    <img src="images/inbox-default.svg"> Inbox
+                </a>
+                <a href="#">
+                    <img src="images/clock-default.svg"> History
+                </a>
+                <a href="#">
+                    <img src="images/user-default.svg"> Users
+                </a>
+                <a href="#">
+                    <img src="images/maintenance-default.svg"> Maintenance
+                </a>
+                <a href="#">
+                    <img src="images/setting-default.svg"> Setting
+                </a>
+            </div>
+        </aside>
+
+
+        <!-- Main Content -->
+        <div class="col-12 col-md-9 col-lg-10 p-0 main-content">
+
+            <div class="topbar d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <div class="search-box">
+                    <img src="images/search-icon.svg" class="me-2">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                    <img src="images/notification-icon.svg">
+
+                    <div class="profile d-flex align-items-center gap-2">
+                        <img src="images/profile.png">
+                        <span>John Doe</span>
+                        <img src="images/downward-arrow.svg">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Dashboard content -->
+            <div class="p-4 main-dashboard">
+                <h4 class="fw-semibold">Dashboard</h4>
+                <div class="d-flex gap-3 flex-wrap mt-4 justify-content-between">
+                    <div class="card-box d-flex align-items-center flex-fill" style="min-width:150px;">
+                        <img src="images/money-bag.svg" alt="icon" class="me-3" style="width:30px; height:50px;">
+                        <div style="font-size: 14px;">
+                            <h5 class="mb-1">23,456</h5>
+                            <p class="mb-0">New Products</p>
+                        </div>
+                    </div>
+
+                    <div class="card-box d-flex align-items-center flex-fill" style="min-width:150px;">
+                        <img src="images/new-product.svg" alt="icon" class="me-3" style="width:30px; height:50px;">
+                        <div style="font-size: 14px;">
+                            <h5 class="mb-1">2345</h5>
+                            <p class="mb-0">Added Products</p>
+                        </div>
+                    </div>
+
+                    <div class="card-box d-flex align-items-center flex-fill" style="min-width:150px;">
+                        <img src="images/total-product.svg" alt="icon" class="me-3" style="width:30px; height:50px;">
+                        <div style="font-size: 14px;">
+                            <h5 class="mb-1">32,456</h5>
+                            <p class="mb-0">Total Products</p>
+                        </div>
+                    </div>
+
+                    <div class="card-box d-flex align-items-center flex-fill" style="min-width:150px;">
+                        <img src="images/dollar-filled.svg" alt="icon" class="me-3" style="width:30px; height:50px;">
+                        <div style="font-size: 14px;">
+                            <h5 class="mb-1">5678</h5>
+                            <p class="mb-0">Today's Sale</p>
+                        </div>
+                    </div>
+
+                    <div class="card-box d-flex align-items-center flex-fill" style="min-width:150px;">
+                        <img src="images/money-bag.svg" alt="icon" class="me-3" style="width:30px; height:50px;">
+                        <div style="font-size: 14px;">
+                            <h5 class="mb-1">33,5342</h5>
+                            <p class="mb-0">Total Sale</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="row mt-4">
+                    <div class="col-lg-6 mb-3">
+                        <div class="box" style="height: 300px;">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="mb-0">Sale</h5>
+                                <div class="d-flex gap-3">
+                                    <span class="mb-0">Weekly</span>
+                                    <span class="mb-0">Monthly</span>
+                                    <span class="mb-0 text-danger fw-semibold active">Yearly</span>
+                                </div>
+                            </div>
+                            <img src="images/data-graph.png" class="img-fluid" style="height: 200px;">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-3">
+                        <div class="box" style="height: 300px;">
+                            <h5>Sales by Country</h5>
+
+                            <div class="text-center">
+                                <img src="images/pie-chart.svg" class="img-fluid mb-3" style="height: 150px;">
+                            </div>
+
+                            <div class="d-flex justify-content-between px-4">
+                                <div class="text-start">
+                                    <p class="mb-1">
+                                        <span class="dot bg-danger"></span> United States of America
+                                    </p>
+                                    <p class="mb-0">
+                                        <span class="dot" style="background-color: #ff7400;"></span> Russia
+                                    </p>
+                                </div>
+
+                                <div class="text-start">
+                                    <p class="mb-1">
+                                        <span class="dot bg-success"></span> Canada
+                                    </p>
+                                    <p class="mb-0">
+                                        <span class="dot bg-warning"></span> India
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Invoice -->
+                <div class="box invoice mt-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Invoices</h5>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>INVOICE</th>
+                                    <th>COMPANY</th>
+                                    <th>EMAIL</th>
+                                    <th>DUE DATE</th>
+                                    <th>STATUS</th>
+                                    <th>AMOUNT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>651535</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td><span class="paid">Paid</span></td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td>558612</td>
+                                    <td>Vendor</td>
+                                    <td>alma.lawson@example.com</td>
+                                    <td>8 Sept, 2020</td>
+                                    <td><span class="paid">Paid</span></td>
+                                    <td>$20,900</td>
+                                </tr>
+                                <tr>
+                                    <td>267400</td>
+                                    <td>Fire Department</td>
+                                    <td>nevaeh.simmons@example.com</td>
+                                    <td>17 Oct, 2020</td>
+                                    <td><span class="paid">Paid</span></td>
+                                    <td>$28,000</td>
+                                </tr>
+                                <tr>
+                                    <td>558612</td>
+                                    <td>Property Management Company</td>
+                                    <td>kanzi.lowson@example.com</td>
+                                    <td>22 Oct, 2020</td>
+                                    <td><span class="paid">Paid</span></td>
+                                    <td>$10,570</td>
+                                </tr>
+                                <tr>
+                                    <td>651535</td>
+                                    <td>Vendor</td>
+                                    <td>alma.lawson@example.com</td>
+                                    <td>8 Sept, 2020</td>
+                                    <td><span class="failed">Failed</span></td>
+                                    <td>$20,900</td>
+                                </tr>
+                                <tr>
+                                    <td>267400</td>
+                                    <td>Fire Department</td>
+                                    <td>nevaeh.simmons@example.com</td>
+                                    <td>17 Oct, 2020</td>
+                                    <td><span class="paid">Paid</span></td>
+                                    <td>$28,000</td>
+                                </tr>
+                                <tr>
+                                    <td>651535</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td><span class="paid">Paid</span></td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td>558612</td>
+                                    <td>Vendor</td>
+                                    <td>alma.lawson@example.com</td>
+                                    <td>8 Sept, 2020</td>
+                                    <td><span class="pending">Pending</span></td>
+                                    <td>$20,900</td>
+                                </tr>
+                                <tr>
+                                    <td>267400</td>
+                                    <td>Fire Department</td>
+                                    <td>nevaeh.simmons@example.com</td>
+                                    <td>17 Oct, 2020</td>
+                                    <td><span class="failed">Failed</span></td>
+                                    <td>$28,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("menuToggle").addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("hide");
+    });
+</script>
+
+</body>
+</html>

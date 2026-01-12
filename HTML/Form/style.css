@@ -1,0 +1,25 @@
+* {
+    font-size: 15px;
+    
+}
+
+.info {
+    background-color: #2b86a7;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+form {
+    background-color: #fff;
+}
+
+h1{
+    background-color: #87deda;
+    color: black;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

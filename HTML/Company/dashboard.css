@@ -1,0 +1,269 @@
+/* Sidebar */
+.sidebar {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu {
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.menu.hide {
+  display: none;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: #374151;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.menu a img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.menu a.active {
+  background: #ffeaea;
+  border-radius: 8px;
+}
+
+/* Main */
+/*Search Bar */
+.topbar {
+  background: #ffffff;
+  padding: 15px 25px;
+}
+
+.search-box {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+}
+
+.search-box img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 16px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 35px;
+}
+
+.profile img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* Dashboard */
+.main-dashboard{
+    background-color: #f6f2f2;
+}
+
+.card-box {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.box{
+    background-color: #fff;
+    padding: 13px;
+    border-radius: 9px
+}
+
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.d-flex span{
+    position: relative;
+}
+
+.d-flex span.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: #dc3545;
+    border-radius: 2px;
+}
+
+/*Invoice*/
+.invoice{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    font-size: 14px;
+}
+
+.invoice .table th{
+    color: #babfc7;
+}
+
+.view-all {
+    font-size: 13px;
+    color: #b81517;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.paid{
+    background:#d1f7d6;
+    color:#1b8f2f;
+    padding:4px 10px;
+    border-radius:6px;
+}
+.pending{
+    background:#fff3cd;
+    color:#c1bfb9;
+    padding:4px 10px;
+    border-radius:6px;
+}
+.failed{
+    background:#f8d7da;
+    color:#c12734;
+    padding:4px 10px;
+    border-radius:6px;
+}
+
+
+/* Responsive */
+/* Mobile devices (max 576px) */
+@media (max-width: 576px) {
+
+  /* Sidebar full width on top */
+  .sidebar {
+    min-height: auto;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .menu a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  /* Topbar stack */
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    max-width: 100%;
+  }
+
+  /* Cards one by one */
+  .card-box {
+    flex: 1 1 100%;
+  }
+
+  /* Chart images auto height */
+  .box img {
+    height: auto !important;
+    max-width: 100%;
+  }
+
+  /* Invoice text smaller */
+  .invoice {
+    font-size: 13px;
+  }
+
+  .invoice table {
+    white-space: nowrap;
+  }
+
+  /* Stack legends vertically */
+  .box .d-flex.justify-content-between.px-4 {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px !important;
+  }
+
+  .box .d-flex.justify-content-between.px-4 > div {
+    width: 100%;
+  }
+
+  .box .d-flex.justify-content-between.px-4 p {
+    font-size: 13px;
+  }
+
+  /* Pie chart center */
+  .box img {
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+/* Tablet devices (max 768px) */
+@media (max-width: 768px) {
+
+  /* Sidebar smaller */
+  .menu a {
+    font-size: 14px;
+  }
+
+  /* Dashboard cards wrap nicely */
+  .card-box {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  /* Charts spacing */
+  .box {
+    margin-bottom: 15px;
+  }
+
+  .box .d-flex.justify-content-between.px-4 {
+    padding: 0 15px !important;
+  }
+
+  .box .d-flex.justify-content-between.px-4 p {
+    font-size: 13.5px;
+  }
+}
+
+
+/* Medium devices (max 992px) */
+@media (max-width: 992px) {
+
+  .card-box {
+    flex: 1 1 calc(33.33% - 10px);
+  }
+
+  .search-box {
+    max-width: 250px;
+  }
+}
+
+
+/* clickbar */

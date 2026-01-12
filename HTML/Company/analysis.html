@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis</title>
+
+  <link rel="stylesheet" href="analysis.css">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Sidebar -->
+      <aside class="col-12 col-md-3 col-lg-2 sidebar p-0" id="sidebar">
+            <div class="logo">
+                <img src="images/menu-bar.svg" id="menuToggle" style="cursor:pointer;">
+                <img src="images/logo.svg" style="width:100px">
+            </div>
+
+            <div class="menu" id="menu">
+                <a href="#">
+                    <img src="images/dashboard-default.svg"> Dashboard
+                </a>
+                <a href="#" class="active">
+                    <img src="images/graph-active.svg"> Analysis
+                </a>
+                <a href="#">
+                    <img src="images/inbox-default.svg"> Inbox
+                </a>
+                <a href="#">
+                    <img src="images/clock-default.svg"> History
+                </a>
+                <a href="#">
+                    <img src="images/user-default.svg"> Users
+                </a>
+                <a href="#">
+                    <img src="images/maintenance-default.svg"> Maintenance
+                </a>
+                <a href="#">
+                    <img src="images/setting-default.svg"> Setting
+                </a>
+            </div>
+        </aside>
+
+      <!-- Main -->
+      <main class="col-12 col-md-9 col-lg-10 p-0" style="background-color: rgb(246, 242, 242);">
+        <!-- Topbar -->
+        <div class="topbar d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <div class="search-box">
+            <img src="images/search-icon.svg" class="me-2">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <img src="images/notification-icon.svg">
+
+            <div class="profile d-flex align-items-center gap-2">
+              <img src="images/profile.png">
+              <span>John Doe</span>
+              <img src="images/downward-arrow.svg">
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+          <h4 class="mb-4">Analysis</h4>
+
+          <div class="card p-4">
+
+            <!-- One Column -->
+            <h6 class="mb-3">One Column</h6>
+            <input class="form-control mb-3" placeholder="Name">
+
+            <select class="form-select mb-3">
+              <option>Dropdown</option>
+            </select>
+
+            <textarea
+              class="form-control mb-4"
+              rows="3"
+              placeholder="Multiple line"
+            ></textarea>
+
+            <!-- Two Column -->
+            <h6 class="mb-3">Two Column</h6>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <input class="form-control" placeholder="Name">
+              </div>
+
+              <div class="col-md-6">
+                <input class="form-control" value="johndoe">
+              </div>
+
+              <div class="col-md-6">
+                <input class="form-control" placeholder="Password">
+              </div>
+
+              <div class="col-md-6">
+                <select class="form-select">
+                  <option>Dropdown</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Three Column -->
+            <h6 class="mb-3">Three Column</h6>
+            <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                <input class="form-control border-danger" value="Focus">
+              </div>
+
+              <div class="col-md-4">
+                <div class="input-wrapper">
+                  <label>Password</label>
+                  <input type="password" class="form-control" value="12345">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="input-wrapper">
+                  <label>Disabled</label>
+                  <input
+                    class="form-control"
+                    value="johndoe"
+                    style="border-style:dashed;"
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Four Column -->
+            <h6 class="mb-3 fw-bold">Four Column</h6>
+            <div class="row g-3 mb-4">
+
+              <div class="col-md-3">
+                <div class="floating-group">
+                  <label>Designation</label>
+                  <input type="text" class="form-control" value="UI Designer">
+                </div>
+                <small class="text-danger">Enter valid data</small>
+              </div>
+
+              <div class="col-md-3">
+                <div class="floating-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <small class="text-muted">
+                  Enter your full name as per ID
+                </small>
+              </div>
+
+              <div class="col-md-3">
+                <div class="floating-group">
+                  <label>Username</label>
+                  <input type="text" class="form-control" value="johndoe">
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <select class="form-select">
+                  <option selected>Select</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Other Design Elements -->
+            <h6 class="mb-3">Other Design Elements</h6>
+
+            <!-- File Upload -->
+            <div class="mb-4">
+              <label class="fw-semibold">File Upload</label><br>
+
+              <button
+                class="btn btn-outline-danger btn-sm rounded-pill"
+                style="margin: 10px; margin-left: -1px;"
+              >
+                <img src="images/cloud-upload-icon.svg">
+                Upload
+              </button>
+
+              <span class="ms-2 text-muted">No item selected</span>
+            </div>
+
+            <!-- Radio -->
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Radio Button</label><br>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radio">
+                <label class="form-check-label">Option 1</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radio" checked>
+                <label class="form-check-label">Option 2</label>
+              </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Checkbox</label><br>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" checked disabled>
+                <label class="form-check-label text-muted">Option 1</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" checked>
+                <label class="form-check-label">Option 2</label>
+              </div>
+            </div>
+
+            <!-- Snackbar -->
+            <h6 class="mb-3">Snackbar</h6>
+            <div class="row g-3 mb-4">
+
+              <div class="col-md-6">
+                <div class="alert danger">
+                  <img src="images/error-icon.svg">
+                  This is an error message
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="alert primary">
+                  <img src="images/info-icon.svg">
+                  This is an information message!
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="alert warning">
+                  <img src="images/warning-icon.svg">
+                  This is a warning message!
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="alert success">
+                  <img src="images/success-icon.svg">
+                  This is a Success message!
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Call To Action -->
+            <h6 class="mb-3">Call to action</h6>
+            <div class="d-flex">
+              <button class="btn btn-danger rounded-pill px-4 me-3 fw-semibold">
+                Primary
+              </button>
+
+              <button class="btn btn-outline-danger rounded-pill px-4 fw-semibold">
+                Secondary
+              </button>
+            </div>
+
+            <!-- Tabs -->
+            <h6 class="mb-3 mt-4">Tabs</h6>
+
+            <ul class="nav nav-tabs custom-tabs">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
+                  Tab 1
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
+                  Tab 2
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">
+                  Tab 3
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content pt-3">
+              <div class="tab-pane fade show active" id="tab1">
+                Tab 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="tab-pane fade" id="tab2">Tab 2 content</div>
+              <div class="tab-pane fade" id="tab3">Tab 3 content</div>
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+<script>
+    document.getElementById("menuToggle").addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("hide");
+    });
+</script>
+
+</body>
+</html>
